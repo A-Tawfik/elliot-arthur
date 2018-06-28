@@ -1,5 +1,5 @@
 <?php
-namespace OS_WP\Comments;
+namespace EA_WP\Comments;
 
 /**
  * Set up comments (mainly removing them)

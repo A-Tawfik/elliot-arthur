@@ -2,7 +2,7 @@
 /* Table
  * ---------------------------------------- */
 
-.os-b-table {
+.ea-b-table {
     width: 100%;
     
     td, th {
@@ -15,8 +15,8 @@
         }
     }
     thead th {
-        @extend .os-h4;
-        @extend .os-u-mt-0;
+        @extend .ea-h4;
+        @extend .ea-u-mt-0;
         border-bottom: 1px solid;
         
     }
@@ -25,8 +25,8 @@
     }
 }
 
-.os-b-table--striped {
-    @extend .os-b-table;
+.ea-b-table--striped {
+    @extend .ea-b-table;
     
     td, th {
         padding: 0.5rem;
@@ -41,9 +41,9 @@
     }
 }
 
-.os-is-hoverable {
-    &.os-b-table,
-    &.os-b-table--striped {
+.ea-is-hoverable {
+    &.ea-b-table,
+    &.ea-b-table--striped {
         tbody tr:hover td {
             background: rgba(black, 0.1);
         }

@@ -14,7 +14,7 @@
 
 <blockquote>
     Blockquote, massa ut fermentum maximus, nisl libero eleifend odio, ornare consectetur massa velit vel tellus.
-    <cite>Firstname Lastname<br><span class="os-u-faded">title/position</span></cite>
+    <cite>Firstname Lastname<br><span class="ea-u-faded">title/position</span></cite>
 </blockquote>
 
 <p>Aenean at volutpat urna, quis mattis augue. Maecenas tincidunt sollicitudin bibendum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur et interdum sem, et convallis lacus. Fusce efficitur, massa ut fermentum maximus, nisl libero eleifend odio, ornare consectetur massa velit vel tellus. Morbi rhoncus arcu at orci blandit, non dapibus est vestibulum. Fusce in vestibulum metus. Sed gravida eu mi non pharetra. Suspendisse egestas nibh imperdiet augue iaculis posuere. Donec bibendum diam rhoncus, porta nulla nec, facilisis est. Donec in erat nec odio venenatis faucibus et ac nunc.</p>
@@ -80,50 +80,50 @@ float: left;
 
 <form>
     <p>
-    <label class="os-b-label" for="text">Text Input <abbr title="Required">*</abbr></label>
-    <input id="text" type="text" class="os-b-input" placeholder="Text Input">
+    <label class="ea-b-label" for="text">Text Input <abbr title="Required">*</abbr></label>
+    <input id="text" type="text" class="ea-b-input" placeholder="Text Input">
     </p>
     <p>
-    <label class="os-b-label" for="password">Password</label>
-    <input id="password" type="password" class="os-b-input" placeholder="Type your Password">
+    <label class="ea-b-label" for="password">Password</label>
+    <input id="password" type="password" class="ea-b-input" placeholder="Type your Password">
     </p>
     <p>
-    <label class="os-b-label" for="webaddress">Web Address</label>
-    <input id="webaddress" type="url" class="os-b-input" placeholder="http://yoursite.com">
+    <label class="ea-b-label" for="webaddress">Web Address</label>
+    <input id="webaddress" type="url" class="ea-b-input" placeholder="http://yoursite.com">
     </p>
     <p>
-    <label class="os-b-label" for="emailaddress">Email Address</label>
-    <input id="emailaddress" type="email" class="os-b-input" placeholder="name@email.com">
+    <label class="ea-b-label" for="emailaddress">Email Address</label>
+    <input id="emailaddress" type="email" class="ea-b-input" placeholder="name@email.com">
     </p>
     <p>
-    <label class="os-b-label" for="search">Search</label>
-    <input id="search" type="search" class="os-b-input" placeholder="Enter Search Term">
+    <label class="ea-b-label" for="search">Search</label>
+    <input id="search" type="search" class="ea-b-input" placeholder="Enter Search Term">
     </p>
     <p>
-    <label class="os-b-label" for="number">Number Input <abbr title="Required">*</abbr></label>
-    <input id="number" type="number" class="os-b-input" placeholder="Enter a Number" pattern="[0-9]*">
+    <label class="ea-b-label" for="number">Number Input <abbr title="Required">*</abbr></label>
+    <input id="number" type="number" class="ea-b-input" placeholder="Enter a Number" pattern="[0-9]*">
     </p>
     <p>
-    <label class="os-b-label" for="textarea">Textarea</label>
-    <textarea id="textarea" class="os-b-input" rows="8" cols="48" placeholder="Enter your message here"></textarea>
+    <label class="ea-b-label" for="textarea">Textarea</label>
+    <textarea id="textarea" class="ea-b-input" rows="8" cols="48" placeholder="Enter your message here"></textarea>
     </p>
 
-    <div class="os-l-row">
-        <div class="os-l-column">
-            <p><input id="submit" value="Standard Button" type="button" class="os-b-btn"/></p>
-            <p style="background:black; padding: 1em;"><input id="reset" value="Inverse Button" type="button" class="os-b-btn os-is-inverse"/></p>
-            <p><input id="button" value="Small Button" type="button" class="os-b-btn os-is-small"/></p>
-            <p><input id="disabled" value="Disabled Button" type="button" class="os-b-btn os-is-disabled" disabled/></p>
+    <div class="ea-l-row">
+        <div class="ea-l-column">
+            <p><input id="submit" value="Standard Button" type="button" class="ea-b-btn"/></p>
+            <p style="background:black; padding: 1em;"><input id="reset" value="Inverse Button" type="button" class="ea-b-btn ea-is-inverse"/></p>
+            <p><input id="button" value="Small Button" type="button" class="ea-b-btn ea-is-small"/></p>
+            <p><input id="disabled" value="Disabled Button" type="button" class="ea-b-btn ea-is-disabled" disabled/></p>
             <p>
-                <button class="os-b-btn--circular">&larr;</button>
-                <button class="os-b-btn--circular">&rarr;</button>
+                <button class="ea-b-btn--circular">&larr;</button>
+                <button class="ea-b-btn--circular">&rarr;</button>
             </p>
         </div>
-        <div class="os-l-column">
-            <p><input id="submit" value="Solid Button" type="button" class="os-b-btn os-is-solid"/></p>
-            <p style="background:black; padding: 1em;"><input id="reset" value="Solid & Inverse" type="button" class="os-b-btn os-is-inverse os-is-solid"/></p>
-            <p><input id="button" value="Small & Solid" type="button" class="os-b-btn os-is-small os-is-solid"/></p>
-            <p><input id="disabled" value="Disabled & Solid" type="button" class="os-b-btn os-is-solid os-is-disabled" disabled/></p>
+        <div class="ea-l-column">
+            <p><input id="submit" value="Solid Button" type="button" class="ea-b-btn ea-is-solid"/></p>
+            <p style="background:black; padding: 1em;"><input id="reset" value="Solid & Inverse" type="button" class="ea-b-btn ea-is-inverse ea-is-solid"/></p>
+            <p><input id="button" value="Small & Solid" type="button" class="ea-b-btn ea-is-small ea-is-solid"/></p>
+            <p><input id="disabled" value="Disabled & Solid" type="button" class="ea-b-btn ea-is-solid ea-is-disabled" disabled/></p>
         </div>
     </div>
 
@@ -135,9 +135,9 @@ float: left;
 
 <h4>Default</h4>
 
-<pre><code>&lt;table class="os-b-table"&gt;</code></pre>
+<pre><code>&lt;table class="ea-b-table"&gt;</code></pre>
 
-<table class="os-b-table">
+<table class="ea-b-table">
     <thead>
         <tr>
             <th>Table Heading 1</th>
@@ -178,9 +178,9 @@ float: left;
 
 <h4>Striped & Hoverable</h4>
 
-<pre><code>&lt;table class="os-b-table--striped os-is-hoverable"&gt;</code></pre>
+<pre><code>&lt;table class="ea-b-table--striped ea-is-hoverable"&gt;</code></pre>
 
-<table class="os-b-table--striped os-is-hoverable">
+<table class="ea-b-table--striped ea-is-hoverable">
     <thead>
         <tr>
             <th>Table Heading 1</th>

@@ -6,9 +6,9 @@
  * Create a new file under the metaboxes directory when appropriate.
  */
 
-require_once OS_WP_INC . 'metaboxes/general.php';
+require_once EA_WP_INC . 'metaboxes/general.php';
 
 // Add General metabox first, so it always appears at top
-OS_WP\MetaBoxes\General\setup();
+EA_WP\MetaBoxes\General\setup();
 
 // Add other metaboxes here

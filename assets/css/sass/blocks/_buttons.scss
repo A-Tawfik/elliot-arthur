@@ -1,9 +1,9 @@
 // Standard Button
 // ------------------------------------------ //
 
-.os-b-btn {
-    @extend .os-h4;
-	@extend .os-u-transition-fast;
+.ea-b-btn {
+    @extend .ea-h4;
+	@extend .ea-u-transition-fast;
     appearance: none;
     background: none;
     border: 1px solid black;
@@ -23,7 +23,7 @@
 
     // Inverse Button
     // ------------------------------------------ //
-    &.os-is-inverse {
+    &.ea-is-inverse {
         border-color: white;
         color: white;
         &:hover, &:focus {
@@ -37,15 +37,15 @@
 
     // Small Button
     // ------------------------------------------ //
-    &.os-is-small {
-        @extend .os-h5;
+    &.ea-is-small {
+        @extend .ea-h5;
         margin-top: 0;
         padding: 0.4em 0.5em;
     }
 
     // Disabled Button
     // ------------------------------------------ //
-    &[disabled], &.os-is-disabled {
+    &[disabled], &.ea-is-disabled {
         cursor: default;
         opacity: 0.3;
         &:hover, &:focus {
@@ -57,7 +57,7 @@
 
     // Solid Button
     // ------------------------------------------ //
-    &.os-is-solid {
+    &.ea-is-solid {
         border-color: transparent;
         background: $color-text-main;
         color: white;
@@ -66,7 +66,7 @@
         }
     }
 
-    &.os-is-solid.os-is-inverse {
+    &.ea-is-solid.ea-is-inverse {
         background: white;
         color: $color-text-main;
         &:hover, &:focus {
@@ -74,8 +74,8 @@
         }
     }
 
-    &.os-is-solid[disabled], 
-    &.os-is-solid.os-is-disabled {
+    &.ea-is-solid[disabled], 
+    &.ea-is-solid.ea-is-disabled {
         background: rgba(black, 0.35);
         &:hover, &:focus {
             border-color: transparent;

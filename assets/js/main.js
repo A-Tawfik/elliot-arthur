@@ -1,5 +1,5 @@
 /*! WP Starter - v1.0.0
- * http://github.com/ObjectiveSubject/os-wp-starter
+ * http://github.com/ObjectiveSubject/ea-wp-starter
  * Copyright (c) 2017; * Licensed GPLv2+ */
 
 /**

@@ -20,7 +20,7 @@
  *
  * returns: a calc() value;
  */
-@function os-span( $span, $total-columns: $columns ) {
+@function ea-span( $span, $total-columns: $columns ) {
     
     $ratio: $span / $total-columns;
     @if ( $ratio > 1 ) {

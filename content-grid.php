@@ -1,7 +1,7 @@
-<div class="os-l-container">
+<div class="ea-l-container">
 
     <style>
-        .os-l-column {
+        .ea-l-column {
             background: #ddd; 
             padding: 1.5em 0.5em; 
             margin-bottom: 1em; 
@@ -12,7 +12,7 @@
         }
     </style>
 
-    <div class="os-l-row os-u-my-3">
+    <div class="ea-l-row ea-u-my-3">
         
         <?php
 
@@ -21,7 +21,7 @@
             
             do { ?>
             
-                <div class="<?php echo "os-l-column"; ?>"><?php echo ".os-l-column"; ?></div>
+                <div class="<?php echo "ea-l-column"; ?>"><?php echo ".ea-l-column"; ?></div>
 
             <?php $i++;
             }
@@ -32,24 +32,24 @@
 
     </div>
 
-    <div class="os-l-row os-u-my-3">
-        <div class="os-l-column os-l-span-4-lg" style="padding:1.5em 0">
-            .os-l-span-4-lg
+    <div class="ea-l-row ea-u-my-3">
+        <div class="ea-l-column ea-l-span-4-lg" style="padding:1.5em 0">
+            .ea-l-span-4-lg
         </div>
-        <div class="os-l-column os-l-span-8-lg" style="padding:1.5em 0">
-            .os-span-8-lg
-            <div class="os-l-row os-u-mt-1">
-                <div class="os-l-column os-l-span-4-md os-l-span-6-lg" style="background:#bbb">.os-l-span-4-md.os-l-span-6-lg</div>
-                <div class="os-l-column os-l-span-4-md os-l-span-6-lg" style="background:#bbb">.os-l-span-4-md.os-l-span-6-lg</div>
-                <div class="os-l-column os-l-span-4-md os-l-span-6-lg" style="background:#bbb">.os-l-span-4-md.os-l-span-6-lg</div>
-                <div class="os-l-column os-l-span-4-md os-l-span-6-lg" style="background:#bbb">.os-l-span-4-md.os-l-span-6-lg</div>
-                <div class="os-l-column os-l-span-4-md os-l-span-6-lg" style="background:#bbb">.os-l-span-4-md.os-l-span-6-lg</div>
-                <div class="os-l-column os-l-span-4-md os-l-span-6-lg" style="background:#bbb">.os-l-span-4-md.os-l-span-6-lg</div>
+        <div class="ea-l-column ea-l-span-8-lg" style="padding:1.5em 0">
+            .ea-span-8-lg
+            <div class="ea-l-row ea-u-mt-1">
+                <div class="ea-l-column ea-l-span-4-md ea-l-span-6-lg" style="background:#bbb">.ea-l-span-4-md.ea-l-span-6-lg</div>
+                <div class="ea-l-column ea-l-span-4-md ea-l-span-6-lg" style="background:#bbb">.ea-l-span-4-md.ea-l-span-6-lg</div>
+                <div class="ea-l-column ea-l-span-4-md ea-l-span-6-lg" style="background:#bbb">.ea-l-span-4-md.ea-l-span-6-lg</div>
+                <div class="ea-l-column ea-l-span-4-md ea-l-span-6-lg" style="background:#bbb">.ea-l-span-4-md.ea-l-span-6-lg</div>
+                <div class="ea-l-column ea-l-span-4-md ea-l-span-6-lg" style="background:#bbb">.ea-l-span-4-md.ea-l-span-6-lg</div>
+                <div class="ea-l-column ea-l-span-4-md ea-l-span-6-lg" style="background:#bbb">.ea-l-span-4-md.ea-l-span-6-lg</div>
             </div>
         </div>
     </div>
 
-    <div class="os-l-row os-u-my-3">
+    <div class="ea-l-row ea-u-my-3">
 
         <?php
 
@@ -58,14 +58,14 @@
 
             do { ?>
             
-                <div class='<?php echo "os-l-column os-l-span-{$i}"; ?>'><?php echo ".os-l-span-{$i}"; ?></div>
+                <div class='<?php echo "ea-l-column ea-l-span-{$i}"; ?>'><?php echo ".ea-l-span-{$i}"; ?></div>
                 
                 <?php 
                 $alt_i = $columns - $i;
                 if ( $alt_i > 0 ) {
                     do { ?>
 
-                        <div class='os-l-column os-l-span-1 os-l-span-1-sm os-l-span-1-md os-l-span-1-lg'>.os-l-span-1</div>
+                        <div class='ea-l-column ea-l-span-1 ea-l-span-1-sm ea-l-span-1-md ea-l-span-1-lg'>.ea-l-span-1</div>
 
                     <?php $alt_i--; 
                     } 

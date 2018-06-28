@@ -1,8 +1,8 @@
-.os-b-label {
-    @extend .os-u-transition;
+.ea-b-label {
+    @extend .ea-u-transition;
     display: block;
 
-    .os-b-input--radio + & {
+    .ea-b-input--radio + & {
         
         $radio-size: 40px;
 
@@ -45,18 +45,18 @@
             transform: translateY(-50%) scale(0);
         }
     }
-    .os-b-input--radio:not(:checked) + &:hover:after {
+    .ea-b-input--radio:not(:checked) + &:hover:after {
         transform: translateY(-50%) scale(0.5);
     }
-    .os-b-input--radio:checked + &:after {
+    .ea-b-input--radio:checked + &:after {
         transform: translateY(-50%) scale(1);
         background: black;
     }
     
 }
 
-.os-b-input {
-    @extend .os-u-transition;
+.ea-b-input {
+    @extend .ea-u-transition;
     display: block;
     width: 100%;
     color: $color-text-main;
@@ -79,6 +79,6 @@
 
 }
 
-.os-b-input--radio {
+.ea-b-input--radio {
     display: none;
 }

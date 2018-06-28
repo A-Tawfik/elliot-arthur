@@ -6,9 +6,9 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://github.com/ObjectiveSubject/os-wp-starter', 'os-wp-starter' ) ); ?>">WP Starter Theme</a>
+			<a href="<?php echo esc_url( __( 'https://github.com/ObjectiveSubject/ea-wp-starter', 'ea-wp-starter' ) ); ?>">WP Starter Theme</a>
 			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'os-wp-starter' ), 'WP Starter', '<a href="http://objectivesubject.com/" rel="designer">Objective Subject</a>' ); ?>
+			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'ea-wp-starter' ), 'WP Starter', '<a href="http://objectivesubject.com/" rel="designer">Objective Subject</a>' ); ?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 

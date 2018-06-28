@@ -1,5 +1,5 @@
 <?php
-namespace OS_WP\PostTypes;
+namespace EA_WP\PostTypes;
 
 /**
  * Set up post types

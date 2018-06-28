@@ -6,20 +6,20 @@
 
 // Container
 // ---------------------------------- //
-.os-l-container {
-    @include os-l-container;
+.ea-l-container {
+    @include ea-l-container;
 }
 
 // Row
 // ---------------------------------- //
-.os-l-row {
-    @include os-l-row;
+.ea-l-row {
+    @include ea-l-row;
 }
 
 // Column
 // ---------------------------------- //
-.os-l-column {
-    @include os-l-column;
+.ea-l-column {
+    @include ea-l-column;
 }
 
 
@@ -27,77 +27,77 @@
 // Grid Fractional Spans
 // ---------------------------------- //
 
-[class*="os-l-span-"] {
+[class*="ea-l-span-"] {
     flex-grow: 0;
     flex-basis: 100%;
 }
 
-.os-l-span-quarter {
+.ea-l-span-quarter {
     flex-basis: calc(25% - #{$gutter});
 }
-.os-l-span-third {
+.ea-l-span-third {
     flex-basis: calc(33.333% - #{$gutter});
 }
-.os-l-span-half {
+.ea-l-span-half {
     flex-basis: calc(50% - #{$gutter});
 }
-.os-l-span-two-thirds {
+.ea-l-span-two-thirds {
     flex-basis: calc(66.666% - #{$gutter});
 }
-.os-l-span-three-quarters {
+.ea-l-span-three-quarters {
     flex-basis: calc(75% - #{$gutter});
 }
 
 @include media($sm) {
-    .os-l-span-quarter-sm {
+    .ea-l-span-quarter-sm {
         flex-basis: calc(25% - #{$gutter});
     }
-    .os-l-span-third-sm {
+    .ea-l-span-third-sm {
         flex-basis: calc(33.333% - #{$gutter});
     }
-    .os-l-span-half-sm {
+    .ea-l-span-half-sm {
         flex-basis: calc(50% - #{$gutter});
     }
-    .os-l-span-two-thirds-sm {
+    .ea-l-span-two-thirds-sm {
         flex-basis: calc(66.666% - #{$gutter});
     }
-    .os-l-span-three-quarters-sm {
+    .ea-l-span-three-quarters-sm {
         flex-basis: calc(75% - #{$gutter});
     }
 }
 
 @include media($md) {
-    .os-l-span-quarter-md {
+    .ea-l-span-quarter-md {
         flex-basis: calc(25% - #{$gutter});
     }
-    .os-l-span-third-md {
+    .ea-l-span-third-md {
         flex-basis: calc(33.333% - #{$gutter});
     }
-    .os-l-span-half-md {
+    .ea-l-span-half-md {
         flex-basis: calc(50% - #{$gutter});
     }
-    .os-l-span-two-thirds-md {
+    .ea-l-span-two-thirds-md {
         flex-basis: calc(66.666% - #{$gutter});
     }
-    .os-l-span-three-quarters-md {
+    .ea-l-span-three-quarters-md {
         flex-basis: calc(75% - #{$gutter});
     }
 }
 
 @include media($lg) {
-    .os-l-span-quarter-lg {
+    .ea-l-span-quarter-lg {
         flex-basis: calc(25% - #{$gutter});
     }
-    .os-l-span-third-lg {
+    .ea-l-span-third-lg {
         flex-basis: calc(33.333% - #{$gutter});
     }
-    .os-l-span-half-lg {
+    .ea-l-span-half-lg {
         flex-basis: calc(50% - #{$gutter});
     }
-    .os-l-span-two-thirds-lg {
+    .ea-l-span-two-thirds-lg {
         flex-basis: calc(66.666% - #{$gutter});
     }
-    .os-l-span-three-quarters-lg {
+    .ea-l-span-three-quarters-lg {
         flex-basis: calc(75% - #{$gutter});
     }
 }
@@ -109,8 +109,8 @@
 
 @for $i from 1 through $columns {
 
-    .os-l-span-#{$i} {
-        flex-basis: os-span( $i );
+    .ea-l-span-#{$i} {
+        flex-basis: ea-span( $i );
     }
 
 }
@@ -118,8 +118,8 @@
 @for $i from 1 through $columns {
 
     @include media($sm) {
-        .os-l-span-#{$i}-sm {
-            flex-basis: os-span( $i );
+        .ea-l-span-#{$i}-sm {
+            flex-basis: ea-span( $i );
         }
     }
 
@@ -128,8 +128,8 @@
 @for $i from 1 through $columns {
 
     @include media($md) {
-        .os-l-span-#{$i}-md {
-            flex-basis: os-span( $i );
+        .ea-l-span-#{$i}-md {
+            flex-basis: ea-span( $i );
         }
     }
 
@@ -138,8 +138,8 @@
 @for $i from 1 through $columns {
 
     @include media($lg) {
-        .os-l-span-#{$i}-lg {
-            flex-basis: os-span( $i );
+        .ea-l-span-#{$i}-lg {
+            flex-basis: ea-span( $i );
         }
     }
 
@@ -148,8 +148,8 @@
 @for $i from 1 through $columns {
 
     @include media($xl) {
-        .os-l-span-#{$i}-xl {
-            flex-basis: os-span( $i );
+        .ea-l-span-#{$i}-xl {
+            flex-basis: ea-span( $i );
         }
     }
 
@@ -160,34 +160,34 @@
 // Grid Column Offsets
 // ---------------------------------- //
 @for $i from 1 through $columns {
-    .os-l-offset-#{$i} {
+    .ea-l-offset-#{$i} {
         margin-left: calc( #{ $i/12 * 100% } + #{ $gutter/2 } );
     }
 }
 @for $i from 1 through $columns {
     @include media($sm) {
-        .os-l-offset-#{$i}-sm {
+        .ea-l-offset-#{$i}-sm {
             margin-left: calc( #{ $i/12 * 100% } + #{ $gutter/2 } );
         }
     }
 }
 @for $i from 1 through $columns {
     @include media($md) {
-        .os-l-offset-#{$i}-md {
+        .ea-l-offset-#{$i}-md {
             margin-left: calc( #{ $i/12 * 100% } + #{ $gutter/2 } );
         }
     }
 }
 @for $i from 1 through $columns {
     @include media($lg) {
-        .os-l-offset-#{$i}-lg {
+        .ea-l-offset-#{$i}-lg {
             margin-left: calc( #{ $i/12 * 100% } + #{ $gutter/2 } );
         }
     }
 }
 @for $i from 1 through $columns {
     @include media($xl) {
-        .os-l-offset-#{$i}-xl {
+        .ea-l-offset-#{$i}-xl {
             margin-left: calc( #{ $i/12 * 100% } + #{ $gutter/2 } );
         }
     }
@@ -198,7 +198,7 @@
 
 // Visual Grid Columns
 // ---------------------------------- //
-.os-l-visual-grid {
+.ea-l-visual-grid {
     position: relative;
     
     &:before {

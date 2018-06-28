@@ -1,12 +1,12 @@
 {
-  "name": "os-wp-starter",
+  "name": "ea-wp-starter",
   "title": "WP Starter",
   "description": "A starter theme for wordpress",
   "version": "1.0.0",
-  "homepage": "http://github.com/ObjectiveSubject/os-wp-starter",
+  "homepage": "http://github.com/ObjectiveSubject/ea-wp-starter",
   "repository": {
     "type": "git",
-    "url": "http://github.com/ObjectiveSubject/os-wp-starter"
+    "url": "http://github.com/ObjectiveSubject/ea-wp-starter"
   },
   "author": {
     "name": "Objective Subject",

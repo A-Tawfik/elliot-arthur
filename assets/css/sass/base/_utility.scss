@@ -6,58 +6,58 @@
  * You can include them in your markup or use @extend to 
  * extend them to various components in your CSS.
  *
- * NOTE: Utility classes are always prefixed with `os-u-`. 
+ * NOTE: Utility classes are always prefixed with `ea-u-`. 
  */
 
 // Clearfix
 // ------------------------------------------ /
-.os-u-clearfix {
+.ea-u-clearfix {
 	@include clearfix;
 }
 
 // Spacing
 // --------------------------------------- /
-.os-u-mt-nudge { margin-top: $leading/3 !important; }
-.os-u-mb-nudge { margin-bottom: $leading/3 !important; }
-.os-u-my-nudge { margin-top: $leading/3 !important; margin-bottom: $leading/3 !important; }
-.os-u-py-nudge { padding-top: $leading/3 !important; padding-bottom: $leading/3 !important; }
+.ea-u-mt-nudge { margin-top: $leading/3 !important; }
+.ea-u-mb-nudge { margin-bottom: $leading/3 !important; }
+.ea-u-my-nudge { margin-top: $leading/3 !important; margin-bottom: $leading/3 !important; }
+.ea-u-py-nudge { padding-top: $leading/3 !important; padding-bottom: $leading/3 !important; }
 @for $i from 0 through 6 {
     $val: $leading * $i;
-    .os-u-ma-#{$i} { margin: $val !important; }
-    .os-u-mt-#{$i} { margin-top: $val !important; }
-    .os-u-mr-#{$i} { margin-right: $val !important; }
-    .os-u-mb-#{$i} { margin-bottom: $val !important; }
-    .os-u-ml-#{$i} { margin-left: $val !important; }
-    .os-u-mx-#{$i} { margin-left: $val !important; margin-right: $val !important; }
-    .os-u-my-#{$i} { margin-top: $val !important; margin-bottom: $val !important; }
-    .os-u-pa-#{$i} { padding: $val !important; }
-    .os-u-pt-#{$i} { padding-top: $val !important; }
-    .os-u-pr-#{$i} { padding-right: $val !important; }
-    .os-u-pb-#{$i} { padding-bottom: $val !important; }
-    .os-u-pl-#{$i} { padding-left: $val !important; }
-    .os-u-px-#{$i} { padding-left: $val !important; padding-right: $val !important; }
-    .os-u-py-#{$i} { padding-top: $val !important; padding-bottom: $val !important; }
+    .ea-u-ma-#{$i} { margin: $val !important; }
+    .ea-u-mt-#{$i} { margin-top: $val !important; }
+    .ea-u-mr-#{$i} { margin-right: $val !important; }
+    .ea-u-mb-#{$i} { margin-bottom: $val !important; }
+    .ea-u-ml-#{$i} { margin-left: $val !important; }
+    .ea-u-mx-#{$i} { margin-left: $val !important; margin-right: $val !important; }
+    .ea-u-my-#{$i} { margin-top: $val !important; margin-bottom: $val !important; }
+    .ea-u-pa-#{$i} { padding: $val !important; }
+    .ea-u-pt-#{$i} { padding-top: $val !important; }
+    .ea-u-pr-#{$i} { padding-right: $val !important; }
+    .ea-u-pb-#{$i} { padding-bottom: $val !important; }
+    .ea-u-pl-#{$i} { padding-left: $val !important; }
+    .ea-u-px-#{$i} { padding-left: $val !important; padding-right: $val !important; }
+    .ea-u-py-#{$i} { padding-top: $val !important; padding-bottom: $val !important; }
 }
 
 
 // Typography
 // --------------------------------------- /
-.os-u-weight-light { font-weight: 300 !important; }
-.os-u-weight-normal { font-weight: 400 !important; }
-.os-u-weight-medium { font-weight: 500 !important; }
-.os-u-weight-bold { font-weight: 700 !important; }
-.os-u-caps { text-transform: uppercase !important; }
-.os-u-font-size-sm { font-size: 75% !important; }
-.os-u-font-size-lg { font-size: 125% !important; }
-.os-u-font-size-xl { font-size: 150% !important; }
-.os-u-text-left { text-align: left !important; }
-.os-u-text-center { text-align: center !important; }
-.os-u-text-right { text-align: right !important; }
+.ea-u-weight-light { font-weight: 300 !important; }
+.ea-u-weight-normal { font-weight: 400 !important; }
+.ea-u-weight-medium { font-weight: 500 !important; }
+.ea-u-weight-bold { font-weight: 700 !important; }
+.ea-u-caps { text-transform: uppercase !important; }
+.ea-u-font-size-sm { font-size: 75% !important; }
+.ea-u-font-size-lg { font-size: 125% !important; }
+.ea-u-font-size-xl { font-size: 150% !important; }
+.ea-u-text-left { text-align: left !important; }
+.ea-u-text-center { text-align: center !important; }
+.ea-u-text-right { text-align: right !important; }
 
 
 // Colors
 // ------------------------------------------ /
-.os-u-clean-list {
+.ea-u-clean-list {
 	margin: 0; padding: 0;
 	list-style: none;
 }
@@ -67,74 +67,74 @@
 // ------------------------------------------ /
 @each $color-name, $color-value in $color-map {
 
-	.os-u-color-#{$color-name} {
+	.ea-u-color-#{$color-name} {
     	color: $color-value !important;
 	}
 
-	.os-u-color-hover-#{$color-name} {
+	.ea-u-color-hover-#{$color-name} {
 		&:hover, &:focus { color: $color-value !important; }
 	}
     
-    .os-u-bg-#{$color-name} {
+    .ea-u-bg-#{$color-name} {
     	background-color: $color-value !important;
 	}
 }
-.os-u-faded { 
+.ea-u-faded { 
 	opacity: 0.3;
 }
-a.os-u-faded:hover,
-a.os-u-faded:focus {
+a.ea-u-faded:hover,
+a.ea-u-faded:focus {
 	opacity: 1;
 }
 
 
 // Display
 // ------------------------------------------ /
-.os-u-display-block { display: block !important; }
-.os-u-display-none { display: none !important; }
-.os-u-display-inline { display: inline !important; }
-.os-u-display-inline-block { display: inline-block !important; }
+.ea-u-display-block { display: block !important; }
+.ea-u-display-none { display: none !important; }
+.ea-u-display-inline { display: inline !important; }
+.ea-u-display-inline-block { display: inline-block !important; }
 
-.os-u-display-block-sm {
+.ea-u-display-block-sm {
 	display: none;
 	@include media($sm) {
 		display: block !important;
     }
 }
-.os-u-display-block-md {
+.ea-u-display-block-md {
 	display: none;
 	@include media($md) {
 		display: block !important;
     }
 }
-.os-u-display-block-lg {
+.ea-u-display-block-lg {
 	display: none;
 	@include media($lg) {
 		display: block !important;
     }
 }
-.os-u-display-block-xl {
+.ea-u-display-block-xl {
 	display: none;
 	@include media($xl) {
 		display: block !important;
     }
 }
-.os-u-display-none-sm {
+.ea-u-display-none-sm {
 	@include media($sm) {
 		display: none !important;
     }
 }
-.os-u-display-none-md {
+.ea-u-display-none-md {
 	@include media($md) {
 		display: none !important;
     }
 }
-.os-u-display-none-lg {
+.ea-u-display-none-lg {
 	@include media($lg) {
 		display: none !important;
     }
 }
-.os-u-display-none-xl {
+.ea-u-display-none-xl {
 	@include media($xl) {
 		display: none !important;
     }
@@ -143,12 +143,12 @@ a.os-u-faded:focus {
 
 // Effects
 // ------------------------------------------ /
-.os-u-transition {
+.ea-u-transition {
 	transition: all 250ms ease-out;
 }
-.os-u-transition-fast {
+.ea-u-transition-fast {
 	transition: all 100ms ease-out;
 }
-.os-u-transition-slow {
+.ea-u-transition-slow {
 	transition: all 500ms ease-out;
 }
