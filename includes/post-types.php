@@ -12,7 +12,7 @@ function setup() {
 	};
 
 	// NOTE: Uncomment to activate post type
-	// add_action( 'init', $n( 'register_my_post_type' ) );
+	add_action( 'init', $n( 'register_work' ) );
 
 }
 
@@ -22,9 +22,9 @@ function setup() {
  * See https://github.com/johnbillion/extended-cpts for more information
  * on registering post types with the extended-cpts library.
  */
-function register_my_post_type() {
-	register_extended_post_type( 'my_post_type', array(
-		'menu_icon' 		=> 'dashicons-layout',
+function register_work() {
+	register_extended_post_type( 'work', array(
+		'menu_icon' 		=> 'dashicons-art',
 		'supports' 			=> array( 'title', 'editor', 'excerpt', 'thumbnail' ),
 	) );
 }

@@ -2,7 +2,7 @@
  * Mixins
  */
 
- 
+
 
 // Media queries
 // ------------------------------------- //
@@ -71,23 +71,19 @@
 // Grid row
 // ------------------------------------- //
 @mixin ea-l-row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -$gutter/2;
-    margin-right: -$gutter/2;
-    
-    &.ea-is-nowrap {
-        flex-wrap: nowrap;
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    grid-column-gap: $sm-gutter;
+    @include media($gutter-breakpoint){
+      grid-column-gap: $gutter;
+    }
+    &.ea-l-masonry{
+      grid-auto-flow: dense;
     }
 }
 
 // Grid column
 // ------------------------------------- //
 @mixin ea-l-column {
-    flex-basis: 0;
-    flex-grow: 1;
-    flex-shrink: 1;
-    margin-left: $gutter/2;
-    margin-right: $gutter/2;
-    max-width: 100%;
+    grid-column-end: span $columns;
 }

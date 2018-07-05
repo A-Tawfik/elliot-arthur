@@ -1,0 +1,45 @@
+#masthead{
+  margin-bottom:$leading *2;
+}
+
+#primary-menu{
+  @extend .ea-l-row;
+    border-top: 1px solid $red;
+    margin-top: 90px;
+    padding:20px 0;
+
+}
+
+
+// #site-navigation{
+//   border-top: 2px solid $red;
+//   margin-top: 90px;
+// }
+
+.menu-item{
+@extend .ea-l-span-3;
+@extend .ea-l-span-3-md;
+  display:inline-block;
+  margin-right:0.7rem;
+  &:first-of-type{
+    @extend .ea-l-span-6;
+    @extend .ea-l-span-3-md;
+    a{
+      color:var(--text-color);
+      opacity:1
+    }
+  }
+  a{
+    font-size: 1rem;
+    color: var(--text-color);
+    opacity: .3;
+    &:hover{
+      color:$red;
+    }
+  }
+  &.current-menu-item{
+    a{
+      opacity:1;
+    }
+  }
+}

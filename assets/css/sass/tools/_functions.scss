@@ -13,7 +13,7 @@
 
 
 /*
- * Return a calculated span value for grid columns 
+ * Return a calculated span value for grid columns
  *
  * $span: (int) grid columns to span
  * $columns: (int) total columns
@@ -21,12 +21,12 @@
  * returns: a calc() value;
  */
 @function ea-span( $span, $total-columns: $columns ) {
-    
+
     $ratio: $span / $total-columns;
     @if ( $ratio > 1 ) {
-        $ratio: 1;
+        $span: $total-columns;
     }
-    $calc: calc( #{ $ratio * 100% } - #{ $gutter } );
+    $calc: $span;
 
     @return $calc;
 };

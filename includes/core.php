@@ -10,7 +10,8 @@ function setup() {
 	$n = function ( $function ) {
 		return __NAMESPACE__ . "\\$function";
 	};
-
+	add_action( 'admin_enqueue_scripts', $n( 'admin_scripts' ));
+	add_action( 'admin_head', $n( 'admin_styles' ));
 	add_action( 'wp_enqueue_scripts', $n( 'scripts' ) );
 	add_action( 'wp_enqueue_scripts', $n( 'styles' ) );
 	add_action( 'after_setup_theme', $n( 'features' ) );
@@ -63,6 +64,18 @@ function scripts( $debug = false ) {
 	);
 }
 
+function admin_scripts( $debug = false ) {
+	$min = ( $debug || defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '.min';
+
+	wp_enqueue_script(
+		'admin',
+		EA_WP_TEMPLATE_URL . "/assets/js/admin{$min}.js",
+		array('jquery'),
+		EA_WP_VERSION,
+		true
+	);
+}
+
 /**
  * Enqueue styles for front-end.
  *
@@ -76,6 +89,17 @@ function styles( $debug = false ) {
 	wp_enqueue_style(
 		'style',
 		EA_WP_URL . "/assets/css/style{$min}.css",
+		array(),
+		EA_WP_VERSION
+	);
+}
+
+function admin_styles( $debug = false ) {
+	$min = ( $debug || defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '.min';
+
+	wp_enqueue_style(
+		'admin_style',
+		EA_WP_URL . "/assets/css/admin{$min}.css",
 		array(),
 		EA_WP_VERSION
 	);

@@ -2,15 +2,16 @@
 // Common Breakpoints
 // ------------------------------------------- /
 
-$sm: 500px;
+$sm: 550px;
 $md: 768px;
 $lg: 1000px;
 $xl: 1500px;
 
-
+$gutter-breakpoint: 820px;
 // Grid
 // ------------------------------------------- /
 
-$max-width: rem(1080);
-$gutter: 18px;
+$max-width: rem(1100);
+$gutter: 30px;
+$sm-gutter: 10px;
 $columns: 12;

@@ -29,23 +29,23 @@ textarea {
 	margin-top: $leading;
 	margin-bottom: 0;
 	font-family: $font-main;
-	font-weight: 300;
-	font-size: rem(34);
-	line-height: 1.1em;
+	font-weight: normal;
+	font-size: rem(16);
+	line-height: 1em;
 	@include media($lg) {
-		font-size: rem(54);
+		font-size: rem(16);
 		line-height: 1em;
 	}
  }
  h2, .ea-h2 {
 	margin-top: $leading;
-	margin-bottom: 0;
-	font-size: rem(24);
+	margin-bottom: $leading/4;
+	font-size: rem(14);
 	line-height: 1.25em;
-	font-weight: 500;
+	font-weight: lighter;
 	font-family: $font-main;
 	@include media($lg) {
-		font-size: rem(36);
+		font-size: rem(14);
 		line-height: 1.1em;
 	}
  }

@@ -6,9 +6,11 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://github.com/ObjectiveSubject/ea-wp-starter', 'ea-wp-starter' ) ); ?>">WP Starter Theme</a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'ea-wp-starter' ), 'WP Starter', '<a href="http://objectivesubject.com/" rel="designer">Objective Subject</a>' ); ?>
+			<div class="ea-l-row">
+				<div class="ea-c-footer ea-l-offset-3-sm ea-l-span-9">
+					&copy; 2018 Elliot Arthur
+				</div>
+			</div>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 

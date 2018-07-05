@@ -1,12 +1,12 @@
 /*
  * Utility Classes
  *
- * These are helpful, single (or limited) purpose, classes 
+ * These are helpful, single (or limited) purpose, classes
  * usually created for the styles you apply the most.
- * You can include them in your markup or use @extend to 
+ * You can include them in your markup or use @extend to
  * extend them to various components in your CSS.
  *
- * NOTE: Utility classes are always prefixed with `ea-u-`. 
+ * NOTE: Utility classes are always prefixed with `ea-u-`.
  */
 
 // Clearfix
@@ -46,7 +46,7 @@
 .ea-u-weight-normal { font-weight: 400 !important; }
 .ea-u-weight-medium { font-weight: 500 !important; }
 .ea-u-weight-bold { font-weight: 700 !important; }
-.ea-u-caps { text-transform: uppercase !important; }
+.ea-u-caps { text-transform: uppercase !important; letter-spacing: 2px;}
 .ea-u-font-size-sm { font-size: 75% !important; }
 .ea-u-font-size-lg { font-size: 125% !important; }
 .ea-u-font-size-xl { font-size: 150% !important; }
@@ -74,12 +74,12 @@
 	.ea-u-color-hover-#{$color-name} {
 		&:hover, &:focus { color: $color-value !important; }
 	}
-    
+
     .ea-u-bg-#{$color-name} {
     	background-color: $color-value !important;
 	}
 }
-.ea-u-faded { 
+.ea-u-faded {
 	opacity: 0.3;
 }
 a.ea-u-faded:hover,

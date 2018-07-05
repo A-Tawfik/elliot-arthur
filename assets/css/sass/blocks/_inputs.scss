@@ -3,10 +3,10 @@
     display: block;
 
     .ea-b-input--radio + & {
-        
+
         $radio-size: 40px;
 
-        position: relative;        
+        position: relative;
         cursor: pointer;
         width: auto;
         padding-left: $radio-size + $gutter;
@@ -14,7 +14,7 @@
             padding-left: $radio-size + ($gutter * 2);
         }
 
-        &:before {  
+        &:before {
             content: "";
             display: block;
             position: absolute;
@@ -29,7 +29,7 @@
             @include media($sm) {
                 left: $gutter;
             }
-            
+
         }
         &:after {
             content: "";
@@ -52,7 +52,7 @@
         transform: translateY(-50%) scale(1);
         background: black;
     }
-    
+
 }
 
 .ea-b-input {
@@ -70,11 +70,11 @@
     }
 
     &:hover {
-        color: $blue;
+        color: $red;
     }
     &:focus {
-        border-color: $blue;
-        color: $blue;
+        border-color: $red;
+        color: $red;
     }
 
 }

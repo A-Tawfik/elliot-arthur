@@ -2,7 +2,17 @@
 // Typography
 // ------------------------------------------- /
 
-$font-main: -apple-system, system-ui, BlinkMacSystemFont, "Helvetica Neue", "Arial", sans-serif;
+@font-face {
+  font-family:'DIN Next W01 Light';
+  font-family:'DINNextW01-LightItalic';
+  font-family:'DIN Next W01 Regular';
+  font-family:'DIN Next W01 Italic';
+  font-family:'DIN Next W02 Medium';
+  font-family:'DINNextW01-MediumItalic';
+}
+
+
+$font-main: "DIN Next W01 Regular","Helvetica", "Arial", sans-serif;
 $font-code: "Monaco", monospace;
 $font-pre: "Monaco", monospace;
 $leading: 1.5rem;

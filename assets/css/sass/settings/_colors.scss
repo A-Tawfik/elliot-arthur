@@ -2,19 +2,19 @@
 // Colors
 // ------------------------------------------- /
 
-$red: #FF0000;
-$blue: #0000FF;
+$red: #FF0044;
+$gray: #C2C2C2;
 
 $color-map: (
     'black' : black,
     'white' : white,
     'red'   : $red,
-    'blue'  : $blue,
+    'gray'  : $gray
 );
 
 $color-text-main: black;
 
-$color-link: $blue;
+$color-link: $red;
 $color-link-active: darken( $color-link, 20% );
 
 $color-code: black;

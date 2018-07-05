@@ -14,10 +14,10 @@ html {
 
 body {
 	overflow-x: hidden;
+	--text-color: black;
 
-	
 	// In javascript, we can query the value of the "content" property on this pseudo element.
-	// Useful when we want to conditionally program javascript based on viewport width 
+	// Useful when we want to conditionally program javascript based on viewport width
 	&:before {
 		content: "default";
 		display: none;
@@ -49,6 +49,15 @@ body {
     background: $color-background-selection;
 }
 
+
+article {
+	@extend .ea-l-row;
+  margin-bottom:$leading * 4;
+}
+
+article.border-top{
+	border-top: 1px solid $red;
+}
 
 /* Lists
  * ---------------------------------------- */
