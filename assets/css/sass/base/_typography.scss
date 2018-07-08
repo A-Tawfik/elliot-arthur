@@ -4,8 +4,12 @@
 
 html {
 	font-size: 100%;
-	@include media($xl) {
-		font-size: 18px;
+	line-height:1;
+	font-weight: normal;
+	font-size: rem(16);
+	@include media($lg) {
+		font-size: rem(18);
+		line-height: 1;
 	}
 }
 
@@ -18,7 +22,7 @@ textarea {
 	font-weight: 400;
 	color: $color-text-main;
 	font-size: rem(16);
-	line-height: $leading;
+	line-height: 1;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -33,19 +37,19 @@ textarea {
 	font-size: rem(16);
 	line-height: 1em;
 	@include media($lg) {
-		font-size: rem(16);
+		font-size: rem(18);
 		line-height: 1em;
 	}
  }
  h2, .ea-h2 {
 	margin-top: $leading;
 	margin-bottom: $leading/4;
-	font-size: rem(14);
+	font-size: rem(13);
 	line-height: 1.25em;
-	font-weight: lighter;
+	font-weight: normal;
 	font-family: $font-main;
 	@include media($lg) {
-		font-size: rem(14);
+		font-size: rem(11);
 		line-height: 1.1em;
 	}
  }
@@ -115,8 +119,9 @@ textarea {
  * ------------------------------------------ */
 
 p {
+	line-height:1;
 	margin-top: $leading;
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 dt {
