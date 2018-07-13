@@ -7,14 +7,15 @@
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
 			<div class="ea-l-row">
-				<div class="ea-c-footer ea-l-offset-3-sm ea-l-span-9">
+				<h2 class="ea-c-footer ea-l-offset-3-sm ea-l-span-9 ea-u-caps">
 					&copy; 2018 Elliot Arthur
-				</div>
+				</h2>
 			</div>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 
 </div><!-- #page -->
+
 
 <span class="media-size"></span>
 

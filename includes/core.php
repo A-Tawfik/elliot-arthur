@@ -57,7 +57,7 @@ function scripts( $debug = false ) {
 
 	wp_enqueue_script(
 		'main',
-		EA_WP_TEMPLATE_URL . "/assets/js/main{$min}.js",
+		EA_WP_TEMPLATE_URL . "/assets/js/main.js",
 		array('jquery'),
 		EA_WP_VERSION,
 		true
@@ -69,7 +69,7 @@ function admin_scripts( $debug = false ) {
 
 	wp_enqueue_script(
 		'admin',
-		EA_WP_TEMPLATE_URL . "/assets/js/admin{$min}.js",
+		EA_WP_TEMPLATE_URL . "/assets/js/admin.js",
 		array('jquery'),
 		EA_WP_VERSION,
 		true
@@ -88,7 +88,7 @@ function styles( $debug = false ) {
 
 	wp_enqueue_style(
 		'style',
-		EA_WP_URL . "/assets/css/style{$min}.css",
+		EA_WP_URL . "/assets/css/style.css",
 		array(),
 		EA_WP_VERSION
 	);
@@ -99,7 +99,7 @@ function admin_styles( $debug = false ) {
 
 	wp_enqueue_style(
 		'admin_style',
-		EA_WP_URL . "/assets/css/admin{$min}.css",
+		EA_WP_URL . "/assets/css/admin.css",
 		array(),
 		EA_WP_VERSION
 	);
